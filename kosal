@@ -1,0 +1,8 @@
+mkdir /tmp/backup
+cd *.py &.c backup 
+cd tmp
+tar -czvf backup-2025-03-28.tar.gz backup
+sudo udisksctl mount -b /dev/sda1
+mv backup-2025-03-28.tar.gz /media/username/pendrive_name/
+sudo udisksctl unmount -b /dev/sda1
+rmdir backup 
